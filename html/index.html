@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <title>Projet4</title>
+</head>
+<body>
+    <header class="flex flex-rows">
+        <button id="menu-burger">Burger</button>
+        <h1>Mes Contacts</h1>
+        <button id = "ajouterContact">Ajouter</button>
+    </header>
+    <div id="nav-left" class="fixed hidden">
+        <div class="exit">
+            <button class=" exit-button">X</button>
+        </div>
+        <div id="rechercher">
+            <h3>Rechercher prenom</h3>
+            <input type="search" id = "contactRecherche" placeholder="Rechercher" name="Recherche" required class="data-recherche">
+          
+        </div>
+        
+        <div id = "resultRecherche">
+
+        </div>
+    
+    </div>
+    <div id="content"></div>
+    <div id="card-single-contact" class="hidden"></div>
+    <div id="ajouterContactForm" class="hidden"></div>
+    <!-- form update-->
+    <div id="contactUpdate" class="hidden">
+        <form >
+   
+            <input type="text" id = "NomUpdate" name ="Nom" placeholder="Nom">
+        
+            
+            <input type="text" id = "PrenomUpdate" name ="Prenom" placeholder="Prenom">
+        
+            
+            <input type="text" id = "EntrepriseUpdate" name ="Entreprise" placeholder="Entreprise">
+        
+            <input type="text" id = "TelephoneUpdate" name ="Telephone" placeholder="Telephone">
+        
+           
+            <input type="text" id = "EmailUpdate" name ="Email" placeholder="Email">
+        
+            
+            <input type="text" id = "AdresseUpdate" name ="Adresse" placeholder="Adresse">
+        
+        </form>
+        <button id="confirmerUpdate">Confirmer Update</button>
+        <button id="retourDeUpdate"> Retour</button>
+    </div>
+    
+    
+</body>
+<script src="./js/burger.js"></script>
+<script src="./js/script.js"></script>
+</html>
